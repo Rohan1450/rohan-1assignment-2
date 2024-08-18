@@ -1,0 +1,121 @@
+1. Program to Print "iNeuron" 5 Times on the Screen
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 0; i < 5; i++) {
+        cout << "iNeuron" << endl;
+    }
+    return 0;
+}
+2. Program to Print the First 10 Natural Numbers
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        cout << i << endl;
+    }
+    return 0;
+}
+3. Program to Print the First 10 Natural Numbers in Reverse Order
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 10; i >= 1; i--) {
+        cout << i << endl;
+    }
+    return 0;
+}
+4. Program to Print the First 10 Odd Natural Numbers
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 19; i += 2) {
+        cout << i << endl;
+    }
+    return 0;
+}
+5. Program to Print the First 10 Odd Natural Numbers in Reverse Order
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 19; i >= 1; i -= 2) {
+        cout << i << endl;
+    }
+    return 0;
+}
+6. Program to Print the First 10 Even Natural Numbers
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 2; i <= 20; i += 2) {
+        cout << i << endl;
+    }
+    return 0;
+}
+7. Program to Print the First 10 Even Natural Numbers in Reverse Order
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 20; i >= 2; i -= 2) {
+        cout << i << endl;
+    }
+    return 0;
+}
+8. Program to Print Squares of the First 10 Natural Numbers
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        cout << "Square of " << i << " is " << i * i << endl;
+    }
+    return 0;
+}
+9. Program to Print Cubes of the First 10 Natural Numbers
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        cout << "Cube of " << i << " is " << i * i * i << endl;
+    }
+    return 0;
+}
+10. Program to Print a Table of 5
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num = 5;
+    for (int i = 1; i <= 10; i++) {
+        cout << num << " x " << i << " = " << num * i << endl;
+    }
+    return 0;
+}
