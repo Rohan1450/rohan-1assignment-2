@@ -1,0 +1,182 @@
+1. Program to Print Unit Digit of a Given Number
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    cout << "Unit digit of the number is: " << num % 10 << endl;
+    return 0;
+}
+2. Program to Print a Given Number Without Its Last Digit
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    cout << "Number without its last digit is: " << num / 10 << endl;
+    return 0;
+}
+3. Program to Swap Values of Two int Variables
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Enter two integers: ";
+    cin >> a >> b;
+    int temp = a;
+    a = b;
+    b = temp;
+    cout << "After swapping, a = " << a << " and b = " << b << endl;
+    return 0;
+}
+4. Program to Swap Values of Two int Variables Without Using a Third Variable
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Enter two integers: ";
+    cin >> a >> b;
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    cout << "After swapping, a = " << a << " and b = " << b << endl;
+    return 0;
+}
+5. Program to Input a Three Digit Number and Display the Sum of the Digits
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, sum = 0;
+    cout << "Enter a three-digit number: ";
+    cin >> num;
+
+    sum += num % 10; // Last digit
+    num /= 10;
+    sum += num % 10; // Second digit
+    num /= 10;
+    sum += num; // First digit
+
+    cout << "Sum of the digits is: " << sum << endl;
+    return 0;
+}
+6. Program to Take a Character as an Input and Display Its ASCII Code
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
+    cout << "ASCII code of " << ch << " is " << int(ch) << endl;
+    return 0;
+}
+7. Program to Check Whether the Given Number is Even or Odd Using a Bitwise Operator
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if (num & 1)
+        cout << "The number is odd." << endl;
+    else
+        cout << "The number is even." << endl;
+    return 0;
+}
+8. Program to Print Size of an int, float, char, and double Type Variable
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Size of int: " << sizeof(int) << " bytes" << endl;
+    cout << "Size of float: " << sizeof(float) << " bytes" << endl;
+    cout << "Size of char: " << sizeof(char) << " bytes" << endl;
+    cout << "Size of double: " << sizeof(double) << " bytes" << endl;
+    return 0;
+}
+9. Program to Make the Last Digit of a Number Stored in a Variable Zero
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    num = (num / 10) * 10;
+    cout << "Number after making last digit zero: " << num << endl;
+    return 0;
+}
+10. Program to Append a Digit to a Number
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, digit;
+    cout << "Enter a number: ";
+    cin >> num;
+    cout << "Enter a digit to append: ";
+    cin >> digit;
+    num = num * 10 + digit;
+    cout << "Resulting number is: " << num << endl;
+    return 0;
+}
+11. Program to Convert INR to USD
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    float inr, usd;
+    const float rate = 76.23;
+    cout << "Enter amount in INR: ";
+    cin >> inr;
+    usd = inr / rate;
+    cout << "Equivalent amount in USD: " << usd << endl;
+    return 0;
+}
+12. Program to Rotate Digits of a Three Digit Number by One Position Towards the Right
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, last_digit, rotated_num;
+    cout << "Enter a three-digit number: ";
+    cin >> num;
+
+    last_digit = num % 10; // Extract last digit
+    rotated_num = (last_digit * 100) + (num / 10); // Rotate digits
+
+    cout << "Number after rotating digits: " << rotated_num << endl;
+    return 0;
+}
