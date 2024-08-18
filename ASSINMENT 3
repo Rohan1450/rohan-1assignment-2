@@ -1,0 +1,307 @@
+
+Here are the C++ programs for each of the problems:
+
+1. Program to Check Whether a Given Number is Positive or Non-Positive
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if (num > 0)
+        cout << "The number is positive." << endl;
+    else
+        cout << "The number is non-positive." << endl;
+    return 0;
+}
+2. Program to Check Whether a Given Number is Divisible by 5 or Not
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if (num % 5 == 0)
+        cout << "The number is divisible by 5." << endl;
+    else
+        cout << "The number is not divisible by 5." << endl;
+    return 0;
+}
+3. Program to Check Whether a Given Number is Even or Odd
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if (num % 2 == 0)
+        cout << "The number is even." << endl;
+    else
+        cout << "The number is odd." << endl;
+    return 0;
+}
+4. Program to Check Whether a Given Number is Even or Odd Without Using % Operator
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if ((num & 1) == 0)
+        cout << "The number is even." << endl;
+    else
+        cout << "The number is odd." << endl;
+    return 0;
+}
+5. Program to Check Whether a Given Number is a Three-Digit Number or Not
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if (num >= 100 && num <= 999)
+        cout << "The number is a three-digit number." << endl;
+    else
+        cout << "The number is not a three-digit number." << endl;
+    return 0;
+}
+6. Program to Print Greater Between Two Numbers or Print One Number if Both are the Same
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+    if (a > b)
+        cout << "Greater number is: " << a << endl;
+    else if (b > a)
+        cout << "Greater number is: " << b << endl;
+    else
+        cout << "Both numbers are the same: " << a << endl;
+    return 0;
+}
+7. Program to Check the Nature of Roots of a Quadratic Equation
+cpp
+Copy code
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double a, b, c, discriminant;
+    cout << "Enter coefficients a, b, and c: ";
+    cin >> a >> b >> c;
+
+    discriminant = b * b - 4 * a * c;
+
+    if (discriminant > 0)
+        cout << "The roots are real and distinct." << endl;
+    else if (discriminant == 0)
+        cout << "The roots are real and equal." << endl;
+    else
+        cout << "The roots are imaginary." << endl;
+    return 0;
+}
+8. Program to Check Whether a Given Year is a Leap Year or Not
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int year;
+    cout << "Enter a year: ";
+    cin >> year;
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+        cout << "The year is a leap year." << endl;
+    else
+        cout << "The year is not a leap year." << endl;
+    return 0;
+}
+9. Program to Find the Greatest Among Three Given Numbers
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
+
+    if (a >= b && a >= c)
+        cout << "Greatest number is: " << a << endl;
+    else if (b >= a && b >= c)
+        cout << "Greatest number is: " << b << endl;
+    else
+        cout << "Greatest number is: " << c << endl;
+
+    return 0;
+}
+10. Program to Calculate and Print Profit or Loss Percentage
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    float costPrice, sellingPrice, profitOrLoss;
+    cout << "Enter cost price: ";
+    cin >> costPrice;
+    cout << "Enter selling price: ";
+    cin >> sellingPrice;
+
+    if (sellingPrice > costPrice) {
+        profitOrLoss = ((sellingPrice - costPrice) / costPrice) * 100;
+        cout << "Profit percentage is: " << profitOrLoss << "%" << endl;
+    } else if (costPrice > sellingPrice) {
+        profitOrLoss = ((costPrice - sellingPrice) / costPrice) * 100;
+        cout << "Loss percentage is: " << profitOrLoss << "%" << endl;
+    } else {
+        cout << "No profit, no loss." << endl;
+    }
+
+    return 0;
+}
+11. Program to Check Whether the Candidate Passed or Failed the Examination
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int marks[5], total = 0;
+    bool passed = true;
+    for (int i = 0; i < 5; i++) {
+        cout << "Enter marks for subject " << i + 1 << ": ";
+        cin >> marks[i];
+        if (marks[i] < 33) passed = false;
+        total += marks[i];
+    }
+
+    if (passed)
+        cout << "Candidate passed the examination." << endl;
+    else
+        cout << "Candidate failed the examination." << endl;
+
+    return 0;
+}
+12. Program to Check Whether a Given Alphabet is in Uppercase or Lowercase
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch;
+    cout << "Enter an alphabet: ";
+    cin >> ch;
+
+    if (ch >= 'A' && ch <= 'Z')
+        cout << "The alphabet is uppercase." << endl;
+    else if (ch >= 'a' && ch <= 'z')
+        cout << "The alphabet is lowercase." << endl;
+    else
+        cout << "The input is not an alphabet." << endl;
+
+    return 0;
+}
+13. Program to Check Whether a Given Number is Divisible by 3 and 2
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num % 3 == 0 && num % 2 == 0)
+        cout << "The number is divisible by both 3 and 2." << endl;
+    else
+        cout << "The number is not divisible by both 3 and 2." << endl;
+
+    return 0;
+}
+14. Program to Check Whether a Given Number is Divisible by 7 or 3
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num % 7 == 0 || num % 3 == 0)
+        cout << "The number is divisible by 7 or 3." << endl;
+    else
+        cout << "The number is not divisible by 7 or 3." << endl;
+
+    return 0;
+}
+15. Program to Check Whether a Given Number is Positive, Negative, or Zero
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num > 0)
+        cout << "The number is positive." << endl;
+    else if (num < 0)
+        cout << "The number is negative." << endl;
+    else
+        cout << "The number is zero." << endl;
+
+    return 0;
+}
+16. Program to Check Whether a Given Character is an Alphabet, Digit, or Special Character
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
+
+    if (ch >= 'A' && ch <= 'Z')
+        cout << "The character is an uppercase alphabet." << endl;
+    else if (ch >= 'a' && ch <= 'z')
+        cout << "The character is a lowercase alphabet." << endl;
+    else if (ch >= '0' && ch <= '9')
+        cout << "The character is a digit." << endl;
+    else
+        cout << "The character is a special character." << endl
+
+
+
+
+
