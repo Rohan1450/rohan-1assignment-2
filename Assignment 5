@@ -1,0 +1,160 @@
+1. Program to Print "iNeuron" N Times on the Screen
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Enter the number of times to print 'iNeuron': ";
+    cin >> N;
+
+    for (int i = 0; i < N; i++) {
+        cout << "iNeuron" << endl;
+    }
+    return 0;
+}
+2. Program to Print the First N Natural Numbers
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Enter the value of N: ";
+    cin >> N;
+
+    for (int i = 1; i <= N; i++) {
+        cout << i << endl;
+    }
+    return 0;
+}
+3. Program to Print the First N Natural Numbers in Reverse Order
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Enter the value of N: ";
+    cin >> N;
+
+    for (int i = N; i >= 1; i--) {
+        cout << i << endl;
+    }
+    return 0;
+}
+4. Program to Print the First N Odd Natural Numbers
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Enter the value of N: ";
+    cin >> N;
+
+    for (int i = 1; i <= 2 * N - 1; i += 2) {
+        cout << i << endl;
+    }
+    return 0;
+}
+5. Program to Print the First N Odd Natural Numbers in Reverse Order
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Enter the value of N: ";
+    cin >> N;
+
+    for (int i = 2 * N - 1; i >= 1; i -= 2) {
+        cout << i << endl;
+    }
+    return 0;
+}
+6. Program to Print the First N Even Natural Numbers
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Enter the value of N: ";
+    cin >> N;
+
+    for (int i = 2; i <= 2 * N; i += 2) {
+        cout << i << endl;
+    }
+    return 0;
+}
+7. Program to Print the First N Even Natural Numbers in Reverse Order
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Enter the value of N: ";
+    cin >> N;
+
+    for (int i = 2 * N; i >= 2; i -= 2) {
+        cout << i << endl;
+    }
+    return 0;
+}
+8. Program to Print Squares of the First N Natural Numbers
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Enter the value of N: ";
+    cin >> N;
+
+    for (int i = 1; i <= N; i++) {
+        cout << "Square of " << i << " is " << i * i << endl;
+    }
+    return 0;
+}
+9. Program to Print Cubes of the First N Natural Numbers
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Enter the value of N: ";
+    cin >> N;
+
+    for (int i = 1; i <= N; i++) {
+        cout << "Cube of " << i << " is " << i * i * i << endl;
+    }
+    return 0;
+}
+10. Program to Print a Table of N
+cpp
+Copy code
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Enter the value of N: ";
+    cin >> N;
+
+    for (int i = 1; i <= 10; i++) {
+        cout << N << " x " << i << " = " << N * i << endl;
+    }
+    return 0;
+}
