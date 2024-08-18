@@ -1,0 +1,112 @@
+Sum of First N Natural Numbers:
+
+python
+Copy code
+def sum_of_natural_numbers(n):
+    return sum(range(1, n + 1))
+
+n = int(input("Enter N: "))
+print("Sum of first", n, "natural numbers is:", sum_of_natural_numbers(n))
+Sum of First N Even Natural Numbers:
+
+python
+Copy code
+def sum_of_even_numbers(n):
+    return sum(range(2, 2 * n + 1, 2))
+
+n = int(input("Enter N: "))
+print("Sum of first", n, "even natural numbers is:", sum_of_even_numbers(n))
+Sum of First N Odd Natural Numbers:
+
+python
+Copy code
+def sum_of_odd_numbers(n):
+    return sum(range(1, 2 * n, 2))
+
+n = int(input("Enter N: "))
+print("Sum of first", n, "odd natural numbers is:", sum_of_odd_numbers(n))
+Sum of Squares of First N Natural Numbers:
+
+python
+Copy code
+def sum_of_squares(n):
+    return sum(i * i for i in range(1, n + 1))
+
+n = int(input("Enter N: "))
+print("Sum of squares of first", n, "natural numbers is:", sum_of_squares(n))
+Sum of Cubes of First N Natural Numbers:
+
+python
+Copy code
+def sum_of_cubes(n):
+    return sum(i ** 3 for i in range(1, n + 1))
+
+n = int(input("Enter N: "))
+print("Sum of cubes of first", n, "natural numbers is:", sum_of_cubes(n))
+Factorial of a Number:
+
+python
+Copy code
+def factorial(n):
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+n = int(input("Enter a number: "))
+print("Factorial of", n, "is:", factorial(n))
+Count Digits in a Given Number:
+
+python
+Copy code
+def count_digits(number):
+    return len(str(abs(number)))
+
+number = int(input("Enter a number: "))
+print("Number of digits in", number, "is:", count_digits(number))
+Check if a Number is Prime:
+
+python
+Copy code
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+n = int(input("Enter a number: "))
+if is_prime(n):
+    print(n, "is a prime number.")
+else:
+    print(n, "is not a prime number.")
+Calculate LCM of Two Numbers:
+
+python
+Copy code
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+def lcm(a, b):
+    return a * b // gcd(a, b)
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("LCM of", a, "and", b, "is:", lcm(a, b))
+Reverse a Given Number:
+
+python
+Copy code
+def reverse_number(n):
+    reversed_num = 0
+    while n > 0:
+        digit = n % 10
+        reversed_num = reversed_num * 10 + digit
+        n = n // 10
+    return reversed_num
+
+n = int(input("Enter a number: "))
+print("Reversed number is:", reverse_number(n))
